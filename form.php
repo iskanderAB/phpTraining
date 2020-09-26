@@ -22,15 +22,22 @@
 <div class="container">
     <form action="index.php" method="get">
         <label> Nom </label>
-        <input type="text" name="nom"><br>
+        <input type="text" name="nom" required ><br>
         <label> Prenom </label>
-        <input type="text" name="prenom"><br>
+        <input type="text" name="prenom" required ><br>
         <label> Cin </label>
-        <input type="text" name="cin"><br>
+        <input type="number" name="cin" max="999999999" min="10000000"  required ><br>
         <label> Salaire </label>
-        <input type="text" name="salaire"><br>
-        <button type="submit"> Ajouter </button>
+        <input type="number" name="salaire" min="400" max="3000" required  ><br>
+        <label style="display: inline" > famme  </label>
+        <input type="radio" name="sex" value="f" class="radio" >
+        <label style="display: inline" > homme  </label>
+        <input type="radio" name="sex" value="h" class="radio" ><br>
+        <button type="submit"> Ajouter</button>
     </form>
 </div>
+<script>
+    // code ...
+</script>
 </body>
 </html>

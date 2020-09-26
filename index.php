@@ -51,11 +51,10 @@
                 $prenom = $_GET['prenom'];
                 $cin = $_GET['cin'];
                 $salaire = $_GET['salaire'];
-
                 echo("
                     <tr>
                      <td>
-                         $nom
+                         $nom 
                      </td>
                      <td>
                          $prenom
