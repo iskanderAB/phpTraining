@@ -45,33 +45,35 @@
             </tr>
             </thead>
             <tbody>
-            <?php 
+            <?php
+            if (isset($_GET['nom'])) {
+                $nom = $_GET['nom'];
+                $prenom = $_GET['prenom'];
+                $cin = $_GET['cin'];
+                $salaire = $_GET['salaire'];
 
-            $nadin = 10 ; 
-               echo("$nadin");
-               for ($i =0 ; $i<20 ; $i++){
-                echo ("
-                <tr>
-                 <td>
-                     ABBASSI
-                 </td>
-                 <td>
-                     Iskander
-                 </td>
-                 <td>
-                     11392***
-                 </td>
-                 <td>
-                     1000
-                 </td>
-                 <td>
-                     <img src='assets/icons/delete.svg' alt='delete icon' width='20'/>
-                 </td>
-                 <td>
-                     <img src='assets/icons/transform.svg' alt='update icon' width='20'/>
-                 </td>
-                ");
-               }
+                echo("
+                    <tr>
+                     <td>
+                         $nom
+                     </td>
+                     <td>
+                         $prenom
+                     </td>
+                     <td>
+                         $cin
+                     </td>
+                     <td>
+                       $salaire
+                     </td>
+                     <td>
+                         <img src='assets/icons/delete.svg' alt='delete icon' width='20'/>
+                     </td>
+                     <td>
+                         <img src='assets/icons/transform.svg' alt='update icon' width='20'/>
+                     </td>
+                    ");
+            }
             ?>
             </tbody>
         </table>
