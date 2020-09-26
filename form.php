@@ -25,14 +25,16 @@
         <input type="text" name="nom" required ><br>
         <label> Prenom </label>
         <input type="text" name="prenom" required ><br>
+        <label> Date de naissance </label>
+        <input type="date" name="date">
         <label> Cin </label>
         <input type="number" name="cin" max="999999999" min="10000000"  required ><br>
         <label> Salaire </label>
         <input type="number" name="salaire" min="400" max="3000" required  ><br>
-        <label style="display: inline" > famme  </label>
-        <input type="radio" name="sex" value="f" class="radio" >
+        <label style="display: inline" > femme  </label>
+        <input type="radio" name="sex" value="femme" class="radio" >
         <label style="display: inline" > homme  </label>
-        <input type="radio" name="sex" value="h" class="radio" ><br>
+        <input type="radio" name="sex" value="homme" class="radio" ><br>
         <button type="submit"> Ajouter</button>
     </form>
 </div>

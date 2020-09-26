@@ -31,10 +31,16 @@
                     prenom
                 </th>
                 <th>
+                    Date de naissance
+                </th>
+                <th>
                     cin
                 </th>
                 <th>
                     salaire
+                </th>
+                <th>
+                    Sex
                 </th>
                 <th>
                     supprimer
@@ -42,6 +48,7 @@
                 <th>
                     modifier
                 </th>
+
             </tr>
             </thead>
             <tbody>
@@ -51,6 +58,8 @@
                 $prenom = $_GET['prenom'];
                 $cin = $_GET['cin'];
                 $salaire = $_GET['salaire'];
+                $sex = $_GET['sex'];
+                $date = $_GET['date'];
                 echo("
                     <tr>
                      <td>
@@ -59,11 +68,17 @@
                      <td>
                          $prenom
                      </td>
+                       <td>
+                         $date
+                     </td>
                      <td>
                          $cin
                      </td>
                      <td>
                        $salaire
+                     </td>
+                       <td>
+                       $sex
                      </td>
                      <td>
                          <img src='assets/icons/delete.svg' alt='delete icon' width='20'/>

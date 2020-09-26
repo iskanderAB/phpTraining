@@ -43,7 +43,9 @@ button:hover{
 .radio{
     display : inline;
     width: auto;
+    height: auto;
     border: none ;
     background : none ;
     box-shadow: none ;
+    margin-top: 10px;
 }
